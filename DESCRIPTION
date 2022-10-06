@@ -1,0 +1,10 @@
+Version: 0.1-0
+Package: GithubSearch
+Title: Search Github for repositories by programming language and query string 
+Description: Programmatically using the Github search page, we can find repositories
+ matching a given search phrase and then clone those respositories
+Author: Duncan Temple Lang
+Maintainer: Duncan Temple Lang <duncan@r-project.org>
+License: BSD
+Imports: RCurl, XML
+
