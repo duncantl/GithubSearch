@@ -1,3 +1,4 @@
+if(FALSE) {
 ff = list.files()
 i = file.info(ff)
 table(i$isdir)
@@ -21,3 +22,4 @@ user = gsub("^/", "", sapply(u, function(x) dirname(parseURI(x)$path)))
 byUser = split(dirs, user)
 
 dsort(table(user))
+}
