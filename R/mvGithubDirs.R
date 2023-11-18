@@ -15,11 +15,14 @@ sapply(dirs[w], function(d) file.rename(d, file.path("github", d)) )
 
 #
 # Users
-u = gsub("^[[:space:]]+url = ", "", url)
-library(XML)
-user = gsub("^/", "", sapply(u, function(x) dirname(parseURI(x)$path)))
+getReposUser = 
+function(dir = ".")
+{
+    u = gsub("^[[:space:]]+url = ", "", url)
+    user = gsub("^/", "", sapply(u, function(x) dirname(parseURI(x)$path)))
 
-byUser = split(dirs, user)
+    byUser = split(dirs, user)
 
-dsort(table(user))
+    dsort(table(user))
+}
 }
