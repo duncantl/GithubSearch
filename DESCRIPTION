@@ -6,5 +6,5 @@ Description: Programmatically using the Github search page, we can find reposito
 Author: Duncan Temple Lang
 Maintainer: Duncan Temple Lang <duncan@r-project.org>
 License: BSD
-Imports: RCurl, XML
+Imports: RCurl, XML, RJSONIO
 
